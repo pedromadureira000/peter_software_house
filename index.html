@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image/png" href="favicon.ico"/> -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <title>Peter Saas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 900px;
+            margin: 3px auto;
+            padding: 1px 20px;
+            background-color: #070F2B; /* color1*/ 
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* Media query for smaller screens */
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100%; /* Set maximum width to 100% on smaller screens */
+                background-color: #070F2B; /* color1*/ 
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+        }
+        h1 {
+            color: #abb2bf;
+        }
+        h2 {
+            color: #abb2bf;
+        }
+        h3 {
+            color: #abb2bf;
+        }
+        p {
+            color: #abb2bf;
+            margin: 0px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap; /* Ensure elements wrap to the next line if needed */
+        }
+        .feature {
+            flex: 1;
+            padding: 3px;
+            border-radius: 5px;
+            background-color: #1B1A55; /* color2*/
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .feature {
+                flex: 1;
+                width: 100%;
+                padding: 3px;
+                border-radius: 5px;
+                background-color: #1B1A55;  /* color2*/
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                margin: 0 10px;
+            }
+        }
+        .feature h2 {
+            color: #abb2bf;
+        }
+
+        .feature p {
+            padding-bottom: 20px;
+        }
+        .button-container {
+            flex-wrap: wrap; /* Ensure elements wrap to the next line if needed */
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            cursor: pointer;
+            display: inline-block;
+            background-color: #535C91; /* color3*/
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 18px;
+        }
+        .button p {
+            color: #d3d9e3; /* color5*/ 
+        }
+        .button + .button {
+            margin-left: 20px; /* Adjust the padding between buttons here */
+        }
+        .center-links {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-content: center;
+            gap: 20px; /* Adjust the space between links as needed */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .contact-links {
+            flex-wrap: wrap; /* Ensure elements wrap to the next line if needed */
+            display: flex;
+            justify-content: center;
+            padding: 10px 20px;
+        }
+        a { color: #9290C3; }
+        a:link { color: #9290C3; }
+        a:visited { color: #6d4b8d; }
+        a:hover { color: #fff; }
+        a:active {
+            color: #9290C3; text-decoration:none; font-weight:normal;
+        }
+
+        .product-link {
+            color: #9290C3; 
+            cursor: pointer;
+        }
+        .title {
+            font-family:'Lato', 'Arial', sans-serif;
+            font-weight: normal;
+            font-size: 42px;
+        }
+        .sub-title{
+            font-family:'Lato', 'Arial', sans-serif;
+            font-weight: normal;
+            font-size: 25px;
+        }
+        .biger-box {
+            display: flex;
+            justify-content: center;
+        }
+        .text-box {
+            border: 2px solid white; /* White border */
+            padding: 10px; /* Padding inside the box */
+            margin: 20px; /* Margin around the box */
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+        <div class="biger-box">
+            <div class="text-box">
+                <h1 class="title">Peter Software House</h1>
+            </div>
+        </div>
+
+        <h2 class="sub-title">
+            Alcance seus objetivos com soluções sob medida para o seu negócio!
+        </h2></br>
+        <p>
+            Seja você uma startup em ascensão ou uma empresa experiente, meu foco é impulsionar </br>o seu crescimento através de sistemas web e aplicativos móveis personalizados.
+        </p></br>
+        <p>
+            Agende uma consulta gratuita e vamos juntos traçar o caminho para o seu sucesso!
+        </p></br>
+
+
+        <div class="contact-links">
+            <div class="button" onclick="window.location='https://wa.link/ouz6vl';">
+                <p>
+                    Whatsapp
+                </p>
+            </div>
+            <div class="button" onclick="window.location='mailto:contact@petersoftwarehouse.com';">
+                <p>
+                    contact@petersoftwarehouse.com
+                </p>
+            </div>
+        </div>
+
+        <h2>
+            Vantagens
+        </h2>
+
+        <div class="features">
+            <div class="feature">
+                <h3>
+                    Soluções sob medida
+                </h3>
+                <p>
+                	Atendo às suas necessidades específicas, garantindo um produto único e eficaz.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                    Integração de IA
+                </h3>
+                <p>
+                        Utilizo as últimas inovações tecnológicas para oferecer produtos inteligentes e eficientes.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                        Parcerias duradouras
+                </h3>
+                <p>
+                        Ofereço suporte e colaboração contínuos, construindo relacionamentos de longo prazo.
+                </p>
+            </div>
+        </div>
+
+
+        <h2>
+                Aplicativos desenvolvidos
+        </h2>
+
+
+        <h3 class="product-link" onclick="window.location='https://petersoftwarehouse.com/mind-organizer';">
+            <u>Mind Organizer</u>
+        </h3>
+
+        <p>
+            Transforme sua organização pessoal com o Mind-Organizer. </br>Gerencie tarefas, registre anotações, pratique journaling e expanda seu vocabulário,</br> tudo em uma plataforma simples e intuitiva.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>
+                        Gerenciar tarefas
+                </h3>
+                <p>
+                        Simplifique sua vida gerenciando tarefas sem esforço.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                        Faça anotações
+                </h3>
+                <p>
+                        Faça anotações para manter seus pensamentos organizados.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                        Pratique Journaling
+                </h3>
+                <p>
+                        Registre seus pensamentos para obter clareza mental.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                        Construa glossários
+                </h3>
+                <p>
+                        Expanda seu vocabulário para aumentar a produtividade.
+                </p>
+            </div>
+        </div>
+        <div class="button-container">
+            <div class="button" onclick="window.location='https://app.petersoftwarehouse.com/sign_up';">
+                <p>
+                        Iniciar teste gratuito de 30 dias
+                </p>
+                <p>
+                        (Não é necessário cartão de crédito)
+                </p>
+            </div>
+            <div class="button">
+                <p>
+                        Baixe o App para Android
+                </p>
+                <p>
+                        (Disponível em breve)
+                </p>
+            </div>
+        </div>
+
+        <h2>
+                Entre em contato
+        </h2>
+        <div class="contact-links">
+            <div class="button" onclick="window.location='https://wa.link/ouz6vl';">
+                <p>
+                    Whatsapp
+                </p>
+            </div>
+            <div class="button" onclick="window.location='mailto:contact@petersoftwarehouse.com';">
+                <p>
+                    contact@petersoftwarehouse.com
+                </p>
+            </div>
+        </div>
+
+        <div class="center-links">
+            <a href="https://petersoftwarehouse.com/privacy_policy">
+                Políticas de privacidade
+            </a>
+            <a href="https://petersoftwarehouse.com/terms_of_use">
+                Termos de uso
+            </a>
+        </div>
+    </div>
+</body>
+</html>
